@@ -6,7 +6,7 @@
 
 #     You initially wrote a condition like if nums[i] == nums[j] == target, which checks for both numbers to equal the target, not to add up to it.
 
-#     You also tried return outside a function.
+#     You also tried return outside a fundfruizcction.
 
 # ✅ Solution:
 
