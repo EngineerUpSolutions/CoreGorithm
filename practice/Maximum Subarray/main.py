@@ -8,19 +8,25 @@ class Solution:
         max_sum= nums[0]
         print(f"current_sum = {current_sum}, max_sum = {max_sum}")
         for i in range(1,len(nums)):
-            print(i)
+            num = nums[i]
+            current_sum = max(num, num + current_sum)
+            max_sum = max(max_sum, current_sum)
+        return max_sum
 
-        # for num in range(nums):
-        #     print(num)
-        # return
-    
-    
+
 nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
 # nums = [3, -2, 5, -1]
 # Create object and call method
 s = Solution()
 print("Final result:", s.maxSubArray(nums))
 
+# iteracions       num     current_sum     max_sum 
+# 1                 1          -2            -2
+#
+#
+#
+#
+#
 
 # Constraints:
 
