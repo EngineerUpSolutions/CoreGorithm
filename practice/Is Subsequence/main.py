@@ -1,6 +1,10 @@
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
-        return 
+        i=0
+        for letter in t:
+            if i < len(s) and letter == s[i]:
+                i +=1
+        return i == len(s)
 
 
 
